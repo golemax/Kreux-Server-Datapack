@@ -1,4 +1,3 @@
-#data merge storage gamemode:data {Mode: 0}
-#execute store result storage gamemode:data Mode int 1 run say hello
+data modify storage gamemode:config mode set value 1d
 
 say Le datapack est lancé
