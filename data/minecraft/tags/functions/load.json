@@ -1,6 +1,9 @@
 {
     "values":[
       "gamemode:load",
-      "quest:load"
+      "mapregen:load",
+      "quest:load",
+      "random:load",
+      "worldborder:load"
       ]
   }
