@@ -9,9 +9,8 @@
             },
             "layers": [
                 {
-                    
-                    "height": 70,
-                    "block": "minecraft:stone"
+                    "block": "minecraft:stone_bricks",
+                    "height": 70
                 }
             ]
         }
