@@ -1,5 +1,5 @@
-
-  {
+{
+    "type": "minecraft:overworld",
     "generator": {
         "type": "minecraft:flat",
         "seed": 0,
@@ -14,6 +14,5 @@
                 }
             ]
         }
-    },
-    "type": "minecraft:overworld"
+    }
 }

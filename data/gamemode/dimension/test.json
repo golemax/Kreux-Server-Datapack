@@ -2,17 +2,18 @@
     "type": "minecraft:asteroid_dimension_type",
     "generator": {
         "type": "minecraft:flat",
+        "seed": 0,
         "settings": {
+            "structures": {
+                "structures": {}
+            },
             "layers": [
                 {
                     
                     "height": 70,
                     "block": "minecraft:barrier"
                 }
-            ],
-            "structures": {
-                "structures": {}
-            }
+            ]
         }
     }
 }
