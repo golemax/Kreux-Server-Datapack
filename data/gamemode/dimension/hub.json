@@ -8,7 +8,12 @@
                 "structures": {}
             },
             "biome": "minecraft:the_void",
-            "layers": []
+            "layers": [
+                {
+                    "block": "minecraft:stone_bricks",
+                    "height": 70
+                }
+            ]
         }
     }
 }
