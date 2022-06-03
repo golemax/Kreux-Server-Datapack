@@ -1,8 +1,7 @@
 {
-    "type": "minecraft:asteroid_dimension_type",
+    "type": "minecraft:overworld",
     "generator": {
         "type": "minecraft:flat",
-        "seed": 0,
         "settings": {
             "structures": {
                 "structures": {}
@@ -11,7 +10,7 @@
                 {
                     
                     "height": 70,
-                    "block": "minecraft:barrier"
+                    "block": "minecraft:stone"
                 }
             ]
         }
