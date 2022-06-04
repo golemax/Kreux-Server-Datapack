@@ -1,5 +1,6 @@
 {
     "values":[
+      "gamemode:ticks",
       "quest:ticks",
       "worldborder:ticks"
       ]
