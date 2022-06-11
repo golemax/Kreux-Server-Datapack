@@ -4,8 +4,11 @@ data modify storage gamemode:config playernum set value 0d
 
 #add commands
 scoreboard objectives add mode trigger
+scoreboard objectives add config trigger
 scoreboard objectives add test trigger
 scoreboard objectives add spawn trigger
+scoreboard objectives add deads dummy
+scoreboard objectives add kills dummy
 
 #startup task
 worldborder damage buffer 0
@@ -30,10 +33,10 @@ gamerule doTraderSpawning false
 gamerule doWeatherCycle false
 gamerule disableRaids true
 gamerule fallDamage true
-gamerule fireDamage false
-gamerule drowningDamage false
+gamerule fireDamage true
+gamerule drowningDamage true
 gamerule forgiveDeadPlayers true
-gamerule freezeDamage false
+gamerule freezeDamage true
 gamerule keepInventory true
 gamerule logAdminCommands false
 gamerule mobGriefing false
