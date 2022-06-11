@@ -5,8 +5,8 @@ scoreboard players enable @a spawn
 
 #detect commands
 execute as @a[scores={mode=1..}, gamemode=creative] run function gamemode:mode
-execute as @a[scores={test=1..}, gamemode=creative] in gamemode:test run tp 0 10 0
-execute as @a[scores={spawn=1..}, gamemode=creative] in gamemode:hub run tp 0 10 0
+execute as @a[scores={test=1..}, gamemode=creative] in gamemode:test run tp 0 25 0
+execute as @a[scores={spawn=1..}, gamemode=creative] in minecraft:overworld run tp @s @e[limit=1,tag=spawn]
 
 #reset commands
 execute as @a[scores={test=1..}, gamemode=creative] in gamemode:mode run trigger test set 0
