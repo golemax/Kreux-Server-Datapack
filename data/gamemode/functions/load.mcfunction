@@ -8,6 +8,8 @@ scoreboard objectives add test trigger
 scoreboard objectives add spawn trigger
 
 #startup task
+worldborder center 1502 -894
+worldborder set 284
 gamemode adventure @a
 tag @a remove ingame
 tp @a @e[limit=1,tag=spawn]
