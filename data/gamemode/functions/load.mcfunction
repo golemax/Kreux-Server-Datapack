@@ -8,7 +8,9 @@ scoreboard objectives add test trigger
 scoreboard objectives add spawn trigger
 
 #startup task
-worldborder center 1502 -894
+worldborder damage buffer 0
+worldborder damage amount 1.5
+worldborder center 1502 -879
 worldborder set 284
 gamemode adventure @a
 tag @a remove ingame
