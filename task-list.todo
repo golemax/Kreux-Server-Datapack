@@ -1,0 +1,66 @@
+DataPack:
+        - gamemode:
+            - créer des dimensions @done
+                - créer une dimension hub @done
+                - créer une dimension test @done
+            - créer des commandes
+                - tp au dimensions @done
+                    - tp au monde test @done
+                    - tp au monde hub @done
+                - modifier le jeu (mode) via des switch
+                    - elytra pour tous
+                    - effets pour tous
+                    - Bordure qui retrécit
+                        - Bordure qui se déplace de façon aléatoire (si bordure qui rétrécit) (conseillé)
+                    - Instant kill de la bordure
+                    - Villageois ont des batons qui repoussent
+                    - Lenteur des flèches des lg
+                    - bonus pour 1 personne
+                        - malus pour 1 personne (uniquement si bonus activé)
+                    - bonus pour la team
+                        - malus pour la team (uniquement si bonus activé)
+                    - bonus pour tous
+                        - malus pour tous (uniquement si bonus activé)
+                - configuration du jeu (config)
+                    - % de lg par rapport au joueurs
+                    - si joueurs impaire, qui a le joueur en +
+                - système de reset des donnés du jeu
+            - système d'autorisation @done
+            - Timer
+            - système de points
+                - kills counter
+                - dead counter
+            - Reparamétrage de la partie (load)
+            - spawn
+                - Build un spawn
+                - Définir un spawn @done
+            - Gestion de la partie
+                - Attribution des rôles
+                - Modification de l'état des joueurs selon leurs role
+                - Lancement de la partie
+                - regen de la map
+                    - TP dans les cages
+                        - Les villageois partes avant les loups
+                        - Les loups de voyent pas les villageois avant de sortir de leurs cage
+                    - Met les visiteurs en spectateur ou les laisse dans le spawn
+                - FIN
+                    - Quand tout les villageois sont tué avant la fin du temps imparti
+                    - Quand les villageois survivent pendant le temps imparti
+        - mapregen
+            - Faire un programme d'automatisation pour repertorier toute les trappes/portes/ect modifiable
+        - defaut function @done
+            - on tick @done
+            - on load @done
+        - Quest
+            - Quand on a tout fait
+            - Quete des tetes
+                - Pour chaque tête individuel
+            - Quete d'excalibure
+        - random
+            - Système de création de nombre aléatoire
+            - Système de récupération de nombre aléatoire a la demande
+        - util
+        - worldborder
+            - initialisation de la worldborder
+            - changement de la taille et de la position selon le temps restant
+                - Detéction du temps restant

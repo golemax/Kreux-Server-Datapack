@@ -2,6 +2,7 @@
     "values":[
       "gamemode:tick",
       "quest:tick",
-      "worldborder:tick"
+      "worldborder:tick",
+      "util:tick"
       ]
   }

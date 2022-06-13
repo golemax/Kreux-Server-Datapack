@@ -7,6 +7,8 @@ scoreboard objectives add mode trigger
 scoreboard objectives add config trigger
 scoreboard objectives add test trigger
 scoreboard objectives add spawn trigger
+scoreboard objectives add reset trigger
+scoreboard objectives add skipline dummy
 scoreboard objectives add deads dummy
 scoreboard objectives add kills dummy
 

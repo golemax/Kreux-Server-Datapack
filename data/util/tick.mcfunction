@@ -1,0 +1,1 @@
+execute as @a run effect give @s saturation 60 255 true
