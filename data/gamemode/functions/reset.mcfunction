@@ -1,17 +1,46 @@
 execute as @s[tag=!authorize] run tell @s Vous n'avez pas la permission de réinitialiser le jeu.
 
-#Demand (two player require)
-execute at @s[tag=!RESETDEMAND,tag=authorize] run tellraw @a[tag=authorize] [{"selector":"@s","color":"gold","bold":true},{"text":" request to reset the game\n","color":"red"},{"text":"ACCEPT","color":"red","underlined":true},{"text":" ","underlined":false,"hoverEvent":{"action":"show_text","contents":[{"text":"","underlined":true}]}},{"text":"DENY","color":"red","bold":false,"underlined":true}]
-execute as @s[tag=authorize,tag=!RESERDEMANDED] run tag @s add RESETDEMAND
-
-execute as @s[tag=!RESETDEMANDED,tag=authorize] run function gamemode:reset
-
 #Verif
-tellraw @s[tag=!RESETVERIF,tag=authorize] [{"text":"Are You Sure ?\n"},{"text":"YES","clickEvent":{"action":"run_command","value":"tag @s add RESET"}},{"text":" "},{"text":"NO","clickEvent":{"action":"run_command","value":"tag @s add NORESET"}}]
-tag @s[tag=!RESETVERIFIED,tag=authorize] add RESETVERIF
+tellraw @s[tag=!RESETVERIF,tag=authorize] [{"text":"Are You Sure ?\n","color":"red","bold":true},{"text":"YES","clickEvent":{"action":"run_command","value":"tag @s add RESET"},"color":"red","bold":true,"underlined":true},{"text":" "},{"text":"NO","clickEvent":{"action":"run_command","value":"tag @s add NORESET"},"color":"red","bold":false,"underlined":true}]
+tag @s[tag=!RESET,tag=!NORESET,tag=authorize] add RESETVERIF
+
+execute as @s[tag=!RESET,tag=!NORESET,tag=authorize] run function gamemode:reset
+
+#Demand (two player require)
+execute at @s[tag=RESET,tag=!RESETDEMAND,tag=authorize] run tellraw @a[tag=authorize,distance=0..] [{"selector":"@s","color":"gold","bold":true},{"text":" request to reset the game\n","color":"red"},{"text":"ACCEPT","color":"red","underlined":true,"clickEvent":{"action":"run_command","value":"tag @a[tag=RESET,tag=authorize,tag=!OTHERSNORESET,tag=!OTHERSRESET] add OTHERSRESET"}},{"text":" ","underlined":false,"hoverEvent":{"action":"show_text","contents":[{"text":"","underlined":true}]}},{"text":"DENY","color":"red","bold":false,"underlined":true,"clickEvent":{"action":"run_command","value":"tag @a[tag=RESET,tag=authorize,tag=!OTHERSNORESET,tag=!OTHERSRESET] add OTHERSNORESET"}}]
+execute as @s[tag=RESET,tag=authorize,tag=!OTHERSNORESET,tag=!OTHERSRESET] run tag @s add RESETDEMAND
+
+execute as @s[tag=RESET,tag=authorize,tag=!OTHERSNORESET,tag=!OTHERSRESET] run function gamemode:reset
+
+
+execute as @s[tag=authorize] run scoreboard players set @s skipline 10
+
+#If deny
+tellraw @s[tag=NORESET,tag=authorize] [{"text":"You have ","color":"red","bold":false},{"text":"DENY","color":"red","bold":true}]
+execute as @s[tag=NORESET,tag=authorize] run scoreboard players set @s skipline 1
+
+#If others deny
+tellraw @s[tag=OTHERSNORESET,tag=authorize] [{"text":"The others have ","color":"red","bold":false},{"text":"DENY","color":"red","bold":true}]
+execute as @s[tag=OTHERSNORESET,tag=authorize] run scoreboard players set @s skipline 1
 
 #If accept
-execute as @s[tag=RESET] run scoreboard players set @s skipline 10
+tellraw @s[tag=RESET,tag=OTHERSRESET,tag=authorize] [{"text":"The others have ","color":"red","bold":false},{"text":"ACCEPT","color":"dark_green","bold":true}]
+execute as @s[tag=RESET,tag=OTHERSRESET,tag=authorize] run scoreboard players set @s skipline 1
+
+#Delete Tag if deny
+tag @s[tag=NORESET,tag=authorize] remove RESET
+tag @s[tag=NORESET,tag=authorize] remove NORESET
+tag @s[tag=NORESET,tag=authorize] remove RESETVERIF
+tag @s[tag=NORESET,tag=authorize] remove OTHERSRESET
+tag @s[tag=NORESET,tag=authorize] remove OTHERSNORESET
+tag @s[tag=NORESET,tag=authorize] remove RESETDEMAND
+
+tag @s[tag=OTHERSNORESET,tag=authorize] remove RESET
+tag @s[tag=OTHERSNORESET,tag=authorize] remove NORESET
+tag @s[tag=OTHERSNORESET,tag=authorize] remove RESETVERIF
+tag @s[tag=OTHERSNORESET,tag=authorize] remove OTHERSRESET
+tag @s[tag=OTHERSNORESET,tag=authorize] remove OTHERSNORESET
+tag @s[tag=OTHERSNORESET,tag=authorize] remove RESETDEMAND
 
 
-execute as @s[tag=RESETVERIF,tag=authorize] run function gamemode:reset
+#Reseting
