@@ -14,7 +14,7 @@ DataPack:
                         - Bordure qui se déplace de façon aléatoire (si bordure qui rétrécit) (conseillé)
                     - Instant kill de la bordure
                     - Villageois ont des batons qui repoussent
-                    - Lenteur des flèches des lg
+                    - Lenteur des flèches des loups
                     - bonus pour 1 personne
                         - malus pour 1 personne (uniquement si bonus activé)
                     - bonus pour la team
@@ -25,7 +25,7 @@ DataPack:
                     - taille minimal de la worldborder (ne doit pas être inférieur ou égal a 0)
                     - intervalle de déplacement (doit être inférieur ou égal au temps de la partie - temps de déplacement)
                     - temps de déplacement (doit être inférieur ou égal a l'intervalle de déplacement)
-                    - % de lg par rapport au joueurs
+                    - % de loups par rapport au joueurs
                     - si joueurs impaire, qui a le joueur en +
                 - système de reset des donnés du jeu
                     - verification @done
