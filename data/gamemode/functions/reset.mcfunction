@@ -39,10 +39,11 @@ tag @s remove RESETDEMAND
 
 
 #Reseting
-tellraw @a[tag=authorize] {"text":"Reseting...","color":"red"}
+execute at @s[tag=OKRESET,tag=authorize] run tellraw @a[tag=authorize] {"text":"Reseting...","color":"red"}
 
 
 
-tellraw @a[tag=authorize] {"text":"Reset Done","color":"red"}
-execute as @s[tag=authorize] run scoreboard players set @s skipline 1
-tag @s remove OKRESET
+execute at @s[tag=OKRESET,tag=authorize] run tellraw @a[tag=authorize] {"text":"Reset Done","color":"red"}
+execute as @s[tag=OKRESET,tag=authorize] run scoreboard players set @s skipline 1
+
+tag @s[tag=authorize] remove OKRESET
