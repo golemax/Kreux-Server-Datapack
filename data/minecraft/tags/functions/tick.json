@@ -3,6 +3,7 @@
       "gamemode:tick",
       "quest:tick",
       "worldborder:tick",
-      "util:tick"
+      "util:tick",
+      "random:tick"
       ]
   }

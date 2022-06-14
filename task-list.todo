@@ -22,6 +22,9 @@ DataPack:
                     - bonus pour tous
                         - malus pour tous (uniquement si bonus activé)
                 - configuration du jeu (config)
+                    - taille minimal de la worldborder (ne doit pas être inférieur ou égal a 0)
+                    - intervalle de déplacement (doit être inférieur ou égal au temps de la partie - temps de déplacement)
+                    - temps de déplacement (doit être inférieur ou égal a l'intervalle de déplacement)
                     - % de lg par rapport au joueurs
                     - si joueurs impaire, qui a le joueur en +
                 - système de reset des donnés du jeu
