@@ -25,6 +25,8 @@ DataPack:
                     - % de lg par rapport au joueurs
                     - si joueurs impaire, qui a le joueur en +
                 - système de reset des donnés du jeu
+                    - verification @done
+                    - reset des donnés du jeu
             - système d'autorisation @done
             - Timer
             - système de points
