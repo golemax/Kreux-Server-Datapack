@@ -30,8 +30,8 @@ DataPack:
             - système d'autorisation @done
             - Timer
             - système de points
-                - kills counter
-                - dead counter
+                - kills counter @done
+                - dead counter @done
             - Reparamétrage de la partie (load)
             - spawn
                 - Build un spawn

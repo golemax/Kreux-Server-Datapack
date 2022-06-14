@@ -9,8 +9,8 @@ scoreboard objectives add test trigger
 scoreboard objectives add spawn trigger
 scoreboard objectives add reset trigger
 scoreboard objectives add skipline dummy
-scoreboard objectives add deads dummy
-scoreboard objectives add kills dummy
+scoreboard objectives add deads deathCount
+scoreboard objectives add kills playerKillCount
 
 #startup task
 worldborder damage buffer 0
