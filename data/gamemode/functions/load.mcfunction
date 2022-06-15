@@ -1,5 +1,6 @@
 #add variables
 data modify storage gamemode:config isPlaying set value 0
+data modify storage gamemode:config authorizeplayernum set value 0
 data modify storage gamemode:config playernum set value 0
 data modify storage gamemode:timer ticks set value 0
 data modify storage gamemode:timer secondes set value 0

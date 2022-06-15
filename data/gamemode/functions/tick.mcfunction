@@ -23,6 +23,8 @@ scoreboard players set @a reset 0
 execute if data storage gamemode:config {isPlaying:1b} run function gamemode:timer
 execute at @e[limit=1,tag=spawn] run spawnpoint @a
 execute at @e[limit=1,tag=spawn] run setworldspawn
+execute as @a[tag=authorize] run scoreboard players add data authorizeplayernum 1
+execute as @e[limit=1] store result storage gamemode:config authorizeplayernum int 1 run scoreboard players get data authorizeplayernum
 execute store result storage gamemode:config playernum int 1 run list
 function gamemode:authorize
 execute as @a[tag=!ingame] run effect give @s regeneration 60 255 true
