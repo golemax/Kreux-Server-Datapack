@@ -7,24 +7,28 @@ DataPack:
                 - tp au dimensions @done
                     - tp au monde test @done
                     - tp au monde hub @done
-                - modifier le jeu (mode) via des switch
-                    - elytra pour tous
-                    - effets pour tous
-                    - Bordure qui retrécit
-                        - Bordure qui se déplace de façon aléatoire (si bordure qui rétrécit) (conseillé)
-                    - Instant kill de la bordure
-                    - Villageois ont des batons qui repoussent
-                    - Lenteur des flèches des loups
-                    - bonus pour 1 personne
-                        - malus pour 1 personne (uniquement si bonus activé)
-                    - bonus pour la team
-                        - malus pour la team (uniquement si bonus activé)
-                    - bonus pour tous
-                        - malus pour tous (uniquement si bonus activé)
+                - modifier le jeu (mode)
+                    - Via des switches
+                        - elytra pour tous
+                        - effets pour tous
+                        - Bordure qui retrécit
+                            - Bordure qui se déplace de façon aléatoire (si bordure qui rétrécit) (conseillé)
+                        - Instant kill de la bordure
+                        - Villageois ont des batons qui repoussent
+                        - Lenteur des flèches des loups
+                        - bonus pour 1 personne
+                            - malus pour 1 personne (uniquement si bonus activé)
+                        - bonus pour la team
+                            - malus pour la team (uniquement si bonus activé)
+                        - bonus pour tous
+                            - malus pour tous (uniquement si bonus activé)
+                        - Déplacement constant de la worldborder
+                    - Via des nombres
+                        - reduction de worldborder par déplacement
+                        - taille minimal de la worldborder (ne doit pas être inférieur ou égal a 0)
+                        - intervalle de déplacement (en secondes) (doit être inférieur ou égal au temps de la partie - temps de déplacement)
+                        - temps de déplacement (doit être inférieur ou égal a l'intervalle de déplacement)
                 - configuration du jeu (config)
-                    - taille minimal de la worldborder (ne doit pas être inférieur ou égal a 0)
-                    - intervalle de déplacement (doit être inférieur ou égal au temps de la partie - temps de déplacement)
-                    - temps de déplacement (doit être inférieur ou égal a l'intervalle de déplacement)
                     - % de loups par rapport au joueurs
                     - si joueurs impaire, qui a le joueur en +
                 - système de reset des donnés du jeu
@@ -62,7 +66,7 @@ DataPack:
                 - Pour chaque tête individuel
             - Quete d'excalibure
         - random
-            - Système de création de nombre aléatoire
+            - Système de création de nombre aléatoire @done
             - Système de récupération de nombre aléatoire a la demande
         - util
         - worldborder

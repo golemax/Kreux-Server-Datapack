@@ -1,9 +1,9 @@
 #add variables
-data modify storage gamemode:config isPlaying set value 0d
-data modify storage gamemode:config playernum set value 0d
-data modify storage gamemode:timer ticks set value 0d
-data modify storage gamemode:timer secondes set value 0d
-data modify storage gamemode:timer minutes set value 0d
+data modify storage gamemode:config isPlaying set value 0
+data modify storage gamemode:config playernum set value 0
+data modify storage gamemode:timer ticks set value 0
+data modify storage gamemode:timer secondes set value 0
+data modify storage gamemode:timer minutes set value 0
 
 #add commands
 scoreboard objectives add mode trigger
