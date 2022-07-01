@@ -1,5 +1,6 @@
 execute as @s[tag=!authorize] run tell @s Vous n'avez pas la permission de réinitialiser le jeu.
 execute if data storage gamemode:config {authorizeplayernum:..2} run tag @s[tag=authorize,tag=!NOTWOPLAYER,tag=!OKRESET] add NOTWOPLAYER
+execute if data storage gamemode:test {tick:0} run function test:tick
 
 #Verif
 tellraw @s[tag=!RESETVERIF,tag=authorize] [{"text":"Are You Sure ?\n","color":"red","bold":true},{"text":"YES","clickEvent":{"action":"run_command","value":"/tag @s add RESET"},"color":"red","bold":true,"underlined":true},{"text":" "},{"text":"NO","clickEvent":{"action":"run_command","value":"/tag @s add NORESET"},"color":"red","bold":false,"underlined":true}]

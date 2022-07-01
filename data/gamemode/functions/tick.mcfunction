@@ -19,6 +19,11 @@ scoreboard players set @a test 0
 scoreboard players set @a spawn 0
 scoreboard players set @a reset 0
 
+#run others tick function
+function util:tick
+function random:tick
+function test:tick
+
 #loop task
 execute if data storage gamemode:config {isPlaying:1b} run function gamemode:timer
 execute at @e[limit=1,tag=spawn] run spawnpoint @a

@@ -5,6 +5,7 @@ data modify storage gamemode:config playernum set value 0
 data modify storage gamemode:timer ticks set value 0
 data modify storage gamemode:timer secondes set value 0
 data modify storage gamemode:timer minutes set value 0
+data modify storage gamemode:test tick set value 0
 
 #add commands
 scoreboard objectives add mode trigger
@@ -17,6 +18,7 @@ scoreboard objectives add deads deathCount
 scoreboard objectives add kills playerKillCount
 
 #startup task
+function random:load
 worldborder damage buffer 0
 worldborder damage amount 1.5
 worldborder center 1502 -879
@@ -24,6 +26,7 @@ worldborder set 284
 gamemode adventure @a
 tag @a remove ingame
 tp @a @e[limit=1,tag=spawn]
+gamerule randomTickSpeed 5
 gamerule announceAdvancements false
 gamerule commandBlockOutput false
 gamerule disableElytraMovementCheck true
@@ -52,4 +55,4 @@ gamerule spectatorsGenerateChunks false
 gamerule universalAnger false
 
 #end of datapack's loading
-say Le datapack est chargé
+function test:load

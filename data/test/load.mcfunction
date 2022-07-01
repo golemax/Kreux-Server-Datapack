@@ -1,0 +1,1 @@
+say Le datapack s'est chargé correctement

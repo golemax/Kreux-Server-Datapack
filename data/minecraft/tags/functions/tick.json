@@ -1,7 +1,5 @@
 {
     "values":[
-      "gamemode:tick",
-      "util:tick",
-      "random:tick"
-      ]
-  }
+      "gamemode:tick"
+    ]
+}

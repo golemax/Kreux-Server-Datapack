@@ -1,6 +1,5 @@
 {
     "values":[
-      "gamemode:load",
-      "random:load"
-      ]
-  }
+      "gamemode:load"
+    ]
+}
