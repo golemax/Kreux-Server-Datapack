@@ -22,8 +22,7 @@ scoreboard players set @a reset 0
 #run others tick function
 function util:tick
 function random:tick
-execute if data storage gamemode:test {tick:0}
-function test:tick
+execute if data storage gamemode:test {tick:0} run function test:tick
 
 #loop task
 execute if data storage gamemode:config {isPlaying:1b} run function gamemode:timer
