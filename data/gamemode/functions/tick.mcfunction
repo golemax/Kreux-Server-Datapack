@@ -12,13 +12,6 @@ execute as @a[scores={test=1..}, gamemode=creative] in gamemode:test run tp 0 25
 execute as @a[scores={spawn=1..}] in minecraft:overworld run tp @s @e[limit=1,tag=spawn]
 execute as @a[scores={reset=1..}] run function gamemode:reset
 
-#reset commands
-scoreboard players set @a mode 0
-scoreboard players set @a config 0
-scoreboard players set @a test 0
-scoreboard players set @a spawn 0
-scoreboard players set @a reset 0
-
 #run others tick function
 function util:tick
 function random:tick
@@ -34,6 +27,12 @@ execute store result storage gamemode:config authorizeplayernum int 1 run scoreb
 scoreboard objectives remove authorizeplayernum
 execute store result storage gamemode:config playernum int 1 run list
 function gamemode:authorize
-execute as @a[tag=!ingame] run effect give @s regeneration 60 255 true
 execute as @a[scores={skipline=1..}] run tellraw @s  
 execute as @a[scores={skipline=1..}] run scoreboard players remove @s skipline 1
+
+#reset commands
+execute as @a[scores={mode=1..}] run scoreboard players set @s mode 0
+execute as @a[scores={config=1..}] run scoreboard players set @s config 0
+execute as @a[scores={test=1..}] run scoreboard players set @s test 0
+execute as @a[scores={spawn=1..}] run scoreboard players set @s spawn 0
+execute as @a[scores={reset=1..}] run scoreboard players set @s reset 0
