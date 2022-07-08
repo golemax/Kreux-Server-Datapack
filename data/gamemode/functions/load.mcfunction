@@ -8,12 +8,10 @@ data modify storage gamemode:timer minutes set value 0
 data modify storage gamemode:test tick set value 0
 
 #add commands
-scoreboard objectives add mode trigger
 scoreboard objectives add config trigger
 scoreboard objectives add test trigger
 scoreboard objectives add spawn trigger
 scoreboard objectives add reset trigger
-scoreboard objectives add skipline dummy
 scoreboard objectives add deads deathCount
 scoreboard objectives add kills playerKillCount
 
