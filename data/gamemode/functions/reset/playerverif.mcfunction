@@ -1,4 +1,4 @@
 execute as @s[tag=!authorize] run tell @s Vous n'avez pas la permission de réinitialiser le jeu.
 
 execute if data storage gamemode:config {authorizeplayernum:..1} as @s[tag=authorize] run tell @s Le nombre de joueurs pouvant vérifier votre requête est insuffisant.
-execute if data storage gamemode:config {authorizeplayernum:2..} as @s[tag=authorize] run tellraw @s [{"text":"Are You Sure ?\n","color":"red","bold":true},{"text":"YES","clickEvent":{"action":"run_command","value":"/tag @s add RESET"},"color":"red","bold":true,"underlined":true},{"text":" "},{"text":"NO","clickEvent":{"action":"run_command","value":"/tag @s add NORESET"},"color":"red","bold":false,"underlined":true}]
+execute if data storage gamemode:config {authorizeplayernum:2..} as @s[tag=authorize] run tellraw @s [{"text":"Are You Sure ?\n","color":"red","bold":true},{"text":"YES","clickEvent":{"action":"run_command","value":"/tag @s add RESET"},"color":"red","bold":true,"underlined":true},{"text":" "},{"text":"NO","clickEvent":{"action":"run_command","value":"/tag @s add DENY"},"color":"red","bold":false,"underlined":true}]
