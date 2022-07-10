@@ -1,12 +1,12 @@
 DataPack:
         - gamemode:
             - créer des dimensions @done
-                - créer une dimension hub @done
+                - créer une dimension emtpy @done
                 - créer une dimension test @done
             - créer des commandes
                 - tp au dimensions @done
                     - tp au monde test @done
-                    - tp au monde hub @done
+                    - tp au monde empty @done
                 - configuration du jeu
                     - elytra pour tous
                     - effets pour tous
