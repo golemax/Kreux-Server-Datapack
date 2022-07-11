@@ -1,0 +1,1 @@
+execute in minecraft:overworld run tp @s @e[limit=1,tag=spawn]

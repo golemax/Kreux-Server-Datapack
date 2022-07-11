@@ -7,15 +7,12 @@ data modify storage gamemode:timer secondes set value 0
 data modify storage gamemode:timer minutes set value 0
 data modify storage gamemode:test tick set value 0
 
-#add commands
-scoreboard objectives add config trigger
-scoreboard objectives add test trigger
-scoreboard objectives add spawn trigger
-scoreboard objectives add reset trigger
+#add counter
 scoreboard objectives add deads deathCount
 scoreboard objectives add kills playerKillCount
 
 #startup task
+function gamemode:commands/load
 function random:load
 worldborder damage buffer 0
 worldborder damage amount 1.5
