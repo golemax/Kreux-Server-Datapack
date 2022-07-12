@@ -6,4 +6,4 @@ execute as @s[tag=authorize, tag=OTHERSDENY, tag=!OTHERSRESET, tag=RESET] run fu
 
 executeas @s[tag=authorize, tag=RESET, tag=!DENY, tag=OTHERSRESET, tag=!OTHERSDENY] run function gamemode:reset/reset
 
-execute if data storage gamemode:config {authorizeplayernum:..1} as @s[tag=authorize, tag=RESET] run function gamemode:reset/notenoughplayersallowed
+execute if score @s tempo matches 2.. as @s[tag=authorize, tag=RESET] run function gamemode:reset/notenoughplayersallowed

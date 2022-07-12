@@ -1,4 +1,4 @@
-#add variables
+#add values
 data modify storage gamemode:config isPlaying set value 0
 data modify storage gamemode:config authorizeplayernum set value 0
 data modify storage gamemode:config playernum set value 0
@@ -7,7 +7,8 @@ data modify storage gamemode:timer secondes set value 0
 data modify storage gamemode:timer minutes set value 0
 data modify storage gamemode:test tick set value 0
 
-#add counter
+#add local values
+scoreboard objectives add tempo dummy
 scoreboard objectives add deads deathCount
 scoreboard objectives add kills playerKillCount
 
