@@ -6,7 +6,4 @@ tag @s remove OTHERSDENY
 
 #Reseting
 tellraw @a[tag=authorize] {"text":"Reseting...","color":"red"}
-
-
-
-tellraw @a[tag=authorize] {"text":"Reset Done","color":"red"
+tellraw @a[tag=authorize] {"text":"Reset Done","color":"red"}
