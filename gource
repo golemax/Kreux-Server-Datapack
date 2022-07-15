@@ -1,0 +1,1 @@
+./gource --hide progress,date,mouse --title "Kreux's server's datapack" --bloom-multiplier 2 --bloom-intensity 0.43 --key  --file-idle-time 0 --auto-skip-seconds 1 -f
