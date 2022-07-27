@@ -1,1 +1,0 @@
-execute store result storage gamemode:config playernum int 1 run list

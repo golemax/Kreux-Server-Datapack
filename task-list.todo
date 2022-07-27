@@ -1,5 +1,5 @@
 DataPack:
-        - gamemode:
+        - hideandseek:
             - créer des dimensions @done
                 - créer une dimension emtpy @done
                 - créer une dimension test @done

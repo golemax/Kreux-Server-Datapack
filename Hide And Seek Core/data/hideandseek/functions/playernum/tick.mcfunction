@@ -1,0 +1,2 @@
+function hideandseek:playernum/player
+function hideandseek:playernum/authorizedplayer

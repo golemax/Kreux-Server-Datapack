@@ -1,2 +1,0 @@
-function gamemode:playernum/player
-function gamemode:playernum/authorizedplayer

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Player"
+        },
+        "description": {
+            "text": "The head of Player"
+        },
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "headdata"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "clic": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    },
+    "parent": "quest:heads"
+}
