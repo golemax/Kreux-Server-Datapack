@@ -50,5 +50,7 @@ gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
 gamerule universalAnger false
 
+function hideandseek:addons
+
 #end of datapack's loading
 function test:load
