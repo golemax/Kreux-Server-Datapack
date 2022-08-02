@@ -8,7 +8,7 @@ scoreboard players set $fixAddons HideAndSeek 0
 # function #hideandseek:addonsload
 # function #hideandseek:addonsreset
 # function #hideandseek:addonstick
-# function #hideandseek:addonsonsettingchossen
+# function #hideandseek:addonsonsetting
 # function #hideandseek:addonsongamestart
 # function #hideandseek:addonsongamestop
 # function #hideandseek:addonsaftergamestart
