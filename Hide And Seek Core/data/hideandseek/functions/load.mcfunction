@@ -1,14 +1,11 @@
 #add values
 data modify storage hideandseek:config isPlaying set value 0
-data modify storage hideandseek:config authorizeplayernum set value 0
 data modify storage hideandseek:config playernum set value 0
 data modify storage hideandseek:timer ticks set value 0
 data modify storage hideandseek:timer secondes set value 0
 data modify storage hideandseek:timer minutes set value 0
-data modify storage hideandseek:test tick set value 0
 
 #add local values
-scoreboard objectives add tempo dummy
 scoreboard objectives add deads deathCount
 scoreboard objectives add kills playerKillCount
 
