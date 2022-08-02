@@ -14,7 +14,6 @@ scoreboard objectives add kills playerKillCount
 
 #startup task
 function hideandseek:commands/load
-function random:load
 worldborder damage buffer 0
 worldborder damage amount 1.5
 worldborder center 1502 -879
@@ -50,7 +49,4 @@ gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks false
 gamerule universalAnger false
 
-function hideandseek:addons
-
-#end of datapack's loading
-function test:load
+function hideandseek:addonsload
