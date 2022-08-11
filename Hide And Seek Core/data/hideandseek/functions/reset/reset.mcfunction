@@ -5,5 +5,8 @@ tag @s remove OTHERSRESET
 tag @s remove OTHERSDENY
 
 #Reseting
-tellraw @a[tag=authorize] {"text":"Reseting...","color":"red"}
-tellraw @a[tag=authorize] {"text":"Reset Done","color":"red"}
+tellraw @a {"text":"Reseting...","color":"red"}
+
+function #hideandseek:addonsreset
+
+tellraw @a {"text":"Reset Done","color":"red"}

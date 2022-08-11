@@ -1,5 +1,5 @@
-function hideandseek:addonsaftergamestart
+function #hideandseek:addonsaftergamestart
 
 
 
-function hideandseek:addonsongamestart
+function #hideandseek:addonsongamestart

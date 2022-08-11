@@ -1,4 +1,4 @@
-tellraw @a[tag=authorize] {"text":"Not enough players allowed","color":"red","bold":false}
+tellraw @a {"text":"Not enough players allowed","color":"red","bold":false}
 
 #Delete Tag
 tag @s remove RESET
